@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Menu</h1>
+    <p id="user-label"></p>
+    <div class="row nav-row">
+      <a href="cart.html">Cart</a>
+      <a href="orders.html">Orders</a>
+      <a href="admin.html" id="admin-link">Admin</a>
+      <button id="logout-btn" type="button">Logout</button>
+    </div>
+
+    <section class="card menu-filter-card">
+      <label for="type-filter">Filter by type</label>
+      <select id="type-filter">
+        <option value="">All</option>
+        <option value="fried_noodles">Fried Noodles</option>
+        <option value="fried_rice">Fried Rice</option>
+        <option value="soup_noodles">Soup Noodles</option>
+        <option value="curry">Curry</option>
+        <option value="toast">Toast</option>
+        <option value="hamberger">Hamberger</option>
+        <option value="sandwich">Sandwich</option>
+        <option value="desserts">Desserts</option>
+      </select>
+    </section>
+
+    <p id="message"></p>
+    <section id="menu-list" class="menu-grid"></section>
+  </main>
+
+  <script type="module" src="assets/js/pages/menu.js"></script>
+</body>
+</html>
