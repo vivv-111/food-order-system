@@ -1,0 +1,125 @@
+* { box-sizing: border-box; font-family: "Segoe UI", Tahoma, sans-serif; }
+body { margin: 0; background: #f5f8f2; color: #223; }
+.container { max-width: 680px; margin: 40px auto; padding: 16px; }
+.card { background: #fff; border: 1px solid #d9e4d0; border-radius: 10px; padding: 16px; display: grid; gap: 8px; }
+input, button { padding: 10px; border-radius: 6px; border: 1px solid #9fb28f; }
+select { padding: 10px; border-radius: 6px; border: 1px solid #9fb28f; }
+button { background: #3f6b3a; color: #fff; cursor: pointer; }
+button:hover { background: #2e522b; }
+a { color: #2e522b; margin-right: 10px; }
+#message { min-height: 20px; }
+.row { margin-top: 10px; }
+
+.nav-row { display: flex; align-items: center; gap: 8px; }
+
+.nav-row a {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #9fb28f;
+	background: #3f6b3a;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-row a:hover {
+	background: #2e522b;
+}
+
+.menu-grid {
+	margin-top: 12px;
+	display: grid;
+	gap: 12px;
+}
+
+.menu-filter-card {
+	margin-top: 12px;
+}
+
+.menu-item h3 {
+	margin: 0;
+}
+
+.menu-header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.order-actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.danger-btn {
+	background: #a33636;
+	border-color: #922d2d;
+	color: #fff;
+}
+
+.danger-btn:hover {
+	background: #7f2626;
+}
+
+.price {
+	color: #2e522b;
+	font-weight: 700;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.qty-input {
+	width: 90px;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	border-bottom: 1px solid #d9e4d0;
+	padding: 8px;
+}
+
+.qty-value {
+	display: inline-block;
+	width: 28px;
+	text-align: center;
+}
+
+.cart-total-card h3 {
+	margin: 0;
+}
+
+.total-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.grid-form {
+	display: grid;
+	gap: 8px;
+}
+
+.grid-form button {
+	margin-top: 6px;
+}
+
+.success {
+	color: #2f6d2f;
+}
+
+.error {
+	color: #9c1a1a;
+}
