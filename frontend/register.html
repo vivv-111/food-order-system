@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Register</h1>
+    <form id="register-form" class="card">
+      <label>User ID</label><input name="userId" required>
+      <label>User Name</label><input name="userName" required>
+      <label>Email</label><input name="email" type="email" required>
+      <label>Password</label><input name="password" type="password" required>
+      <button type="submit">Register</button>
+      <p id="message"></p>
+    </form>
+    <a href="login.html">Back to login</a>
+  </main>
+  <script type="module" src="assets/js/pages/register.js"></script>
+</body>
+</html>
