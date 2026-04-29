@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<main class="container">
+		<h1>Shopping Cart</h1>
+		<p id="user-label"></p>
+
+		<div class="row nav-row">
+			<a href="menu.html">Menu</a>
+			<a href="orders.html">Orders</a>
+			<button id="logout-btn" type="button">Logout</button>
+		</div>
+
+		<p id="message"></p>
+		<section id="cart-list" class="card"></section>
+		<section class="card cart-total-card">
+			<div class="total-row">
+				<h3>Total: <span id="cart-total">$0.00</span></h3>
+				<button id="submit-order-btn" type="button">Submit Current Cart</button>
+			</div>
+		</section>
+	</main>
+
+	<script type="module" src="assets/js/pages/cart.js"></script>
+</body>
+</html>
