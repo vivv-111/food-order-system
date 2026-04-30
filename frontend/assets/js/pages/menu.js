@@ -15,6 +15,11 @@ if (!token) {
   window.location.href = "login.html";
 }
 
+if (role === "ADMIN") {
+  window.location.href = "admin.html";
+
+}
+
 userLabelEl.textContent = `${userId} (${role})`;
 if (role !== "ADMIN") {
   adminLinkEl.style.display = "none";

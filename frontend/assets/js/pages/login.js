@@ -17,7 +17,13 @@ form.addEventListener("submit", async (e) => {
     localStorage.setItem("userId", data.userId);
     localStorage.setItem("role", data.role);
     messageEl.textContent = "Login successful, redirecting...";
-    window.location.href = "menu.html";
+    
+
+    if (data.role === "ADMIN") {
+      window.location.href = "admin.html";
+    } else {
+      window.location.href = "menu.html";
+    }
   } catch (err) {
     messageEl.textContent = err.message;
   }

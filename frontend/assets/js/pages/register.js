@@ -19,7 +19,7 @@ form.addEventListener("submit", async (e) => {
     localStorage.setItem("userId", data.userId);
     localStorage.setItem("role", data.role);
     messageEl.textContent = "Register successful, redirecting...";
-    window.location.href = "menu.html";
+    window.location.href = "menu.html";  
   } catch (err) {
     messageEl.textContent = err.message;
   }
